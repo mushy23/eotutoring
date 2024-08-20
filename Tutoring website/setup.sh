@@ -8,7 +8,7 @@
 if ! grep -q FLASK_RUN_PORT ".env" 2>/dev/null; then
     echo Creating .env
     echo FLASK_DEBUG=True >.env
-    echo FLASK_RUN_PORT=50271 >> .env
+    echo FLASK_RUN_PORT=10000 >> .env
 fi
 
 # add virtual environment if it doesn't already exist
