@@ -35,5 +35,3 @@ fi
 # activate the virtual environment for the lab
 source vcwk/bin/activate
 
-# run Flask for cwk
-./run.sh app
