@@ -13,9 +13,7 @@ from flask_mail import Mail, Message
 from flask import Flask, render_template
 app = Flask(__name__)
 
-f __name__ == '__main__':
-    # Run the app on 0.0.0.0 instead of localhost
-    app.run(host='0.0.0.0', port=10000)
+
 #Mail configurations
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
@@ -26,7 +24,7 @@ app.config['MAIL_USE_SSL'] = True
 app.secret_key= 'aimun'
 
 mail = Mail(app)
-app.run(debug=True)
+app.run(host='0.0.0.0', port=10000, debug=True)
 
 @app.route('/')
 def dashboard():
