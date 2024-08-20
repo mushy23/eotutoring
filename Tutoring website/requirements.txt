@@ -12,4 +12,3 @@ SQLAlchemy==1.4.27
 Werkzeug==2.0.2
 WTForms==3.0.1
 Flask-WTF==1.0.0
-python-barcode==0.14.0

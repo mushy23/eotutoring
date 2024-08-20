@@ -7,8 +7,8 @@
         {"src": "/(.*)", "dest": "app.py"}
     ],
     "functions":{
-        "*":{
-            "maxDuration":60
+        "/app.py":{
+            "maxDuration":5
         }
     }
 }
